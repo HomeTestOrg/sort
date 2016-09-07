@@ -1,0 +1,70 @@
+<html>
+    <head>
+    
+    </head>
+    <body>
+    
+        <div id="input"></div>
+        <div id="output"></div>
+        <script>
+            
+            var a=[];
+            var ELEMENTS=10;
+            var num;
+            for (var i=0;i<ELEMENTS;i++)
+            {
+                % generate a random numbers between 1 and ELEMENTS
+                var num=Math.floor(Math.random()*ELEMENTS+1);
+                a.push(num)
+            }
+            var myArray=a.slice();
+            var temp, unsortedArray=null;
+            var result=bubbleSort1(myArray);
+            document.getElementById("input").innerHTML=a;
+            document.getElementById("output").innerHTML=myArray;
+        
+            // Bubble sort
+            function bubbleSort1(myArray)
+            {
+                for (var k=1;k<myArray.length;k++)
+                {
+                
+                    for (vat i=0;i<myArray.length-k;i++)
+                    {
+                        if(myArray[i]>myArray[i+1])
+                        {
+                            // SWAP them
+                            temp=myArray[i];
+                            myArray[i]=myArray[i+1];
+                            myArray[i+1]=temp;
+
+                        }
+                    }
+                }
+                return myArray.slice();
+            }
+           
+            
+            function findMinOfArray(vector)
+            {
+                var minV=vector[0];
+                index=0;
+                for (var i=1;i<vector.length;i++)
+                {
+                    if (minV>vector[i])
+                    {
+                        minV=vector[i];
+                        index=i;
+                    }
+                }
+                return minV;
+            }
+        
+            
+        </script>
+    
+    </body>
+
+
+
+</html>
