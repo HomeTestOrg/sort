@@ -13,7 +13,7 @@
             var num;
             for (var i=0;i<ELEMENTS;i++)
             {
-                % generate a random numbers between 1 and ELEMENTS
+                //generate a random numbers between 1 and ELEMENTS
                 var num=Math.floor(Math.random()*ELEMENTS+1);
                 a.push(num)
             }
@@ -26,10 +26,12 @@
             // Bubble sort
             function bubbleSort1(myArray)
             {
+                var output="";
+                var i=0;
                 for (var k=1;k<myArray.length;k++)
                 {
                 
-                    for (vat i=0;i<myArray.length-k;i++)
+                    for (var i=0;i<myArray.length-k;i++)
                     {
                         if(myArray[i]>myArray[i+1])
                         {
@@ -39,8 +41,11 @@
                             myArray[i+1]=temp;
 
                         }
+                        i++;
+                       console.log(myArray)
                     }
                 }
+                console.log(i);
                 return myArray.slice();
             }
            
