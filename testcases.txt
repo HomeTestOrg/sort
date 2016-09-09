@@ -1,0 +1,8 @@
+team member1 : chabged the file and comit -> push
+team member 2 : change the same file and -> push
+
+team member 2 get this error
+cuz the server is different
+has to pull
+The new content will be automatically pushed
+If same line merge conflict will occur.
